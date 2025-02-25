@@ -1,0 +1,250 @@
+{
+  // 编辑器配置
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "'Dank Mono'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.75,
+  "editor.suggestFontSize": 0,
+  "editor.suggestLineHeight": 28,
+  "editor.lightbulb.enabled": "off",
+  "editor.renderWhitespace": "boundary",
+  "editor.overviewRulerBorder": false,
+  "editor.scrollbar.verticalScrollbarSize": 4,
+  "editor.scrollbar.horizontalScrollbarSize": 4,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.renderLineHighlight": "all",
+  "editor.renderControlCharacters": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.minimap.enabled": false,
+  "editor.glyphMargin": false,
+  "editor.folding": true,
+  "editor.lineNumbers": "on",
+  "editor.guides.indentation": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "workbench.colorTheme": "PurpleSchool Theme",
+  "workbench.layoutControl.enabled": false,
+  // "workbench.iconTheme": "symbols",
+  "breadcrumbs.enabled": false,
+  "window.commandCenter": false,
+  // 终端字体设置
+  "terminal.integrated.fontFamily": "'Dank Mono'",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.75,
+  // 菜单栏
+  "window.menuBarVisibility": "toggle",
+  // 原生titlebar, 自linux平台可以隐藏logo和关闭按钮
+  "window.titleBarStyle": "native",
+  // "window.titleBarStyle": "custom",
+  "window.customTitleBarVisibility": "never",
+  // 自动折行
+  "editor.wordWrap": "on",
+  "notebook.output.wordWrap": true,
+  // tab 显示和样式
+  "workbench.editor.showTabs": "none",
+  "workbench.editor.tabSizing": "fit",
+  // "window.density.editorTabHeight": "compact",
+  // 勿扰模式不全屏
+  "zenMode.fullScreen": false,
+  // 勿扰模式显示行号
+  "zenMode.hideLineNumbers": false,
+  // 勿扰模式显示文件Tab
+  "zenMode.showTabs": "none",
+  // vim 配置
+  "vim.foldfix": true,
+  "vim.smartRelativeLine": true,
+  "vim.showMarksInGutter": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  // 勿扰模式
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "commands": [
+        "workbench.action.toggleZenMode"
+      ]
+    },
+    // 最近的打开文件
+    {
+      "before": [
+        "n"
+      ],
+      "commands": [
+        "extension.intellijRecentFiles"
+      ]
+    },
+    // run test task
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "t"
+      ],
+      "commands": [
+        "testing.runAtCursor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "revealInExplorer"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
+    // 上翻页
+    {
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "after": [
+        "<C-u>"
+      ]
+    },
+    // 下翻页
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "after": [
+        "<C-d>"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    // jumpy2配置
+    {
+      "before": [
+        "f"
+      ],
+      "commands": [
+        "metaGo.gotoSmart"
+      ],
+      "when": "editorTextFocus"
+    },
+    {
+      "before": [
+        "<leader>",
+        "g"
+      ],
+      "commands": [
+        "aipopup.action.modal.generate"
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "c",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "before": [
+        "="
+      ],
+      "commands": [
+        "vscode-better-align.align"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [],
+  "vim.leader": "<space>",
+  // Use system clipboard for vim
+  "vim.useSystemClipboard": true,
+  // 在vim中自动切换输入法, 如果是remote项目，请在remote中配置
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "1",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/bin/fcitx5-remote",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/fcitx5-remote -t {im}",
+  "cursor.cpp.disabledLanguages": [
+    "blade.php",
+    "json"
+  ],
+  // golang相关配置
+  "go.testTimeout": "3600s",
+  "go.testFlags": [
+    "-count=1" // 禁用测试缓存
+  ],
+  // ==== php配置 ==== 
+  "editor.formatOnSave": true, // 保存代码自动格式化
+  "editor.cursorSurroundingLines": 30,
+  "php.format.codeStyle": "Off",
+  "php.format.rules.alignConsecutiveAssignments": true,
+  "php.format.rules.alignConstants": true,
+  "php.format.rules.alignEnumCases": true,
+  "php.format.rules.alignMatchArmBodies": true,
+  "php.format.rules.alignProperties": true,
+  "php.format.rules.arrayInitializersAlignKeyValuePairs": true,
+  "php.format.rules.openBraceOnNewLineForFunctions": false,
+  "php.format.rules.indentBraces": false,
+  "php.format.rules.addCommaAfterLastArrayElement": false,
+  "notebook.output.scrolling": true,
+  "remote.SSH.remotePlatform": {
+    "dev.uselesses.com": "linux",
+    "43.134.185.101": "linux"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "go.testEnvFile": "${workspaceFolder}/.env",
+  // metajump配置
+  "metaGo.jumper.commandsToUseSingleTargetChar": [
+    "metaGo.selectSmart",
+    "metaGo.addCursorSmart",
+    "metaGo.metaJump.deleteToSmart"
+  ]
+}

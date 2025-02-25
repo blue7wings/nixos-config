@@ -1,0 +1,44 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+w",
+        "command": "-extension.vim_ctrl+w",
+        "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+oem_5",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-extension.vim_ctrl+f",
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "-extension.vim_ctrl+[",
+        "when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "composer.createNewChat"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-composer.createNewChat",
+        "when": "focusedView == 'workbench.panel.aichat.view'"
+    }
+]
