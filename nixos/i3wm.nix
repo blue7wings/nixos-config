@@ -1,14 +1,16 @@
 { config, pkgs, callPacakage, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    i3
+    polybar
+  ];
+
   services.displayManager.defaultSession = "none+i3";
   environment.pathsToLink = [ "/libexec" ];
   services.xserver = {
     enable = true;
     desktopManager = {xterm.enable=false;};
-    #displayManager = {
-      #defaultSession = "none+i3";
-    #};
     windowManager.i3 = {
       package = pkgs.i3-gaps;
       enable = true;
@@ -18,6 +20,6 @@
 	polybar
       ];
     };
-  };
+  };  
 }
 

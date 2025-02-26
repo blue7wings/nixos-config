@@ -11,6 +11,7 @@
 	pkgs.code-cursor
      	pkgs.home-manager
 	pkgs.opera
+ 	pkgs.brave
   ];
   
   services.keyd = {
