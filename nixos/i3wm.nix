@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     i3
     polybar
+    i3blocks
   ];
 
   services.displayManager.defaultSession = "none+i3";

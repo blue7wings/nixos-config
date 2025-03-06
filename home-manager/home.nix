@@ -95,4 +95,5 @@
     autosuggestion.enable = true; # 启用历史建议
     enableCompletion = true;       # 启用补全
   };
+  
 }

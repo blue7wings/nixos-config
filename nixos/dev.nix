@@ -10,9 +10,13 @@
 	vim
 	neofetch
 	zsh
-	btop
+	htop
 	pkgs.php84
 	starship
 	pkgs.docker
+	pkgs.inetutils
+	pkgs.python3
+	pkgs.python3Packages.requests
+
   ];
 }

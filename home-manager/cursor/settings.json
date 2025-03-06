@@ -222,7 +222,7 @@
     "-count=1" // 禁用测试缓存
   ],
   // ==== php配置 ==== 
-  "editor.formatOnSave": true, // 保存代码自动格式化
+  "editor.formatOnSave": false, // 保存代码自动格式化
   "editor.cursorSurroundingLines": 30,
   "php.format.codeStyle": "Off",
   "php.format.rules.alignConsecutiveAssignments": true,

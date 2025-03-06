@@ -8,10 +8,17 @@
         alacritty
         pkgs.arandr
         pkgs.xorg.xrandr
-	pkgs.code-cursor
+	#pkgs.code-cursor
+        (callPackage /etc/nixos/cursor_0_45_14.nix {})
      	pkgs.home-manager
-	pkgs.opera
  	pkgs.brave
+	pkgs.teams-for-linux
+	pkgs.flameshot
+	# pkgs.wechat-uos
+	pkgs.httpie
+ 	pkgs.httpie-desktop
+	pkgs.windsurf
+
   ];
   
   services.keyd = {

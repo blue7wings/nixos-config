@@ -122,7 +122,10 @@
     HandleSuspendKey=ignore         # 挂起键忽略
     HandleHibernateKey=ignore       # 休眠键忽略
   '';
-
+  environment.etc."vmware-tools/tools.conf".text = ''
+    [default]
+    lock-on-host-lock = false
+  '';
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
